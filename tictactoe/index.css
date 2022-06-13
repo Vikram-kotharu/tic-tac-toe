@@ -1,0 +1,13 @@
+.main{
+    text-align: center;
+}
+.ort{
+    border-radius: 15px;
+}
+
+.or{
+    border-radius: 15px;
+}
+.or:hover{
+    background-color: red;
+}
