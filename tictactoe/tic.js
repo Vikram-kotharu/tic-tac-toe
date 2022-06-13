@@ -1,5 +1,6 @@
 let player = 'x';
 let gameOver = false;
+let indi = '';
 
 const changeplayer = () =>{
     return player === "x" ? "0" : "x";
@@ -22,9 +23,13 @@ const winnercheck = ()=>{
         r[item[0]].innerText === r[item[1]].innerText && r[item[1]].innerText === r[item[2]].innerText && r[item[0]].innerText !== ""){
             document.getElementById('result').innerText = `Winner is ${r[item[0]].innerText}`
             gameOver = true;
+            indi = 'okay';
         }
 
     })
+    if(indi === ''){
+        document.getElementById('result').innerText = 'Draw!';
+    }
 }
 
 let boxes = document.getElementsByClassName('or');
